@@ -77,6 +77,22 @@ export default {
             of: [{ type: 'string' }],
         },
         {
+            name: 'blacklistedTokens',
+            title: 'Blacklisted Tokens',
+            description:
+                'Blacklisted tokens will not appear in the popular tokens and will also not appear by default in the token dropdown list.',
+            type: 'array',
+            of: [{ type: 'string' }],
+        },
+        {
+            name: 'boostedPools',
+            title: 'Boosted Pool Ids',
+            description:
+                'List of all known boosted pools. Until the SOR can handle balance updates properly, we need to prevent the same boosted pool being used twice in the same swap.',
+            type: 'array',
+            of: [{ type: 'string' }],
+        },
+        {
             name: 'poolFilters',
             title: 'Pool Filters',
             description:
